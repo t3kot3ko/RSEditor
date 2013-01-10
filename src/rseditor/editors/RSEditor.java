@@ -9,8 +9,8 @@ public class RSEditor extends TextEditor {
 	public RSEditor() {
 		super();
 		colorManager = new ColorManager();
-		setSourceViewerConfiguration(new XMLConfiguration(colorManager));
-		setDocumentProvider(new XMLDocumentProvider());
+		setSourceViewerConfiguration(new RSLConfiguration(colorManager));
+		setDocumentProvider(new RSLDocumentProvider());
 	}
 	public void dispose() {
 		colorManager.dispose();
